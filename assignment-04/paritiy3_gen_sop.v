@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : masoud
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831015
+--  Student Name: Mostafa Bijani
+--  Student Mail: mostafa.bjn.80@gmail.com
 --  *******************************************************
 --  Additional Comments:
 --
@@ -26,8 +26,18 @@ module paritiy3_gen_sop (
 	input c,
 	output f	
 );
-	/* write your code here */
+	wire An, Bn, Cn;
+	wire ABC, AnBC, ABnC, ABCn;
 	
-	/* write your code here */
+	not f1(An,a);
+	not f2(Bn,b);	
+	not f3(Cn,c);
+	
+	and f4(ABC, An, Bn, Cn);
+	and f5(AnBC, An, b, c);
+	and f6(ABnC, a, Bn, c);
+	and f7(ABCn, a, b, Cn);
+	
+	or final_or(f, ABC, AnBC, ABnC, ABCn);
 
 endmodule
