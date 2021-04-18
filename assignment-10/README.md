@@ -1,4 +1,4 @@
-# CE202-LC-Lab-Material
+# Logic-lab-2021
 
 ## Logic Circuits Lab 10
 
