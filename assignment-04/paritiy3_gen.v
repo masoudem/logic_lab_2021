@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831015
+--  Student Name: Mostafa Bijani
+--  Student Mail: mostafa.bjn.80@gmail.com
 --  *******************************************************
 --  Additional Comments:
 --
@@ -26,8 +26,7 @@ module paritiy3_gen (
 	input c,
 	output f	
 );
-	/* write your code here */
-	
-	/* write your code here */
+
+	xnor(f, a, b, c);
 
 endmodule
