@@ -26,8 +26,6 @@ module paritiy3_gen (
 	input c,
 	output f	
 );
-	/* write your code here */
-	
-	/* write your code here */
+	xnor(f, a, b, c);
 
 endmodule
