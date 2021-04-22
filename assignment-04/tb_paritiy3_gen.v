@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831079
+--  Student Name: MasihDalfardi
+--  Student Mail: masihdalfardiamaut.ac.ir
 --  *******************************************************
 --  Additional Comments:
 --
@@ -48,7 +48,36 @@ wire f_parity_gen_sop;
 		b <= 1'b0;
 		c <= 1'b0;
 		# 10;
-		// write your code here
+		a <= 1'b0;
+		b <= 1'b0;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b0;
+		b <= 1'b1;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b0;
+		b <= 1'b1;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b0;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b0;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b1;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b1;
+		b = 1'b1;
+		c = 1'b1;
+		# 10;
+		$finish;
+
 		
 	end
 
