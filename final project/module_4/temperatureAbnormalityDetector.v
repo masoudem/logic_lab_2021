@@ -26,6 +26,7 @@ module temperatureAbnormalityDetector(
 input [4:0] factotyBaseTemp;
 input [3:0] factotyTempCoef;
 input [3:0] tempSensorValue;
-output temperatureAbnormality;
+output lowTempAbnormality;
+output highTempAbnormality;
  // write your code here, please.
 endmodule
