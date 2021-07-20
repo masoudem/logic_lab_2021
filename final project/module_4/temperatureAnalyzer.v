@@ -22,6 +22,8 @@ module temperatureAnalyzer(
  temperature,
  temperatureAbnormality);
 input [7:0] temperature;
-output temperatureAbnormality;
- assign temperatureAbnormality = (temperature > 39) || (temperature < 35);
+output lowTempAbnormality;
+output highTempAbnormality;
+ assign lowTempAbnormality = (temperature < 35);
+ assign highTempAbnormality = (temperature > 39);
 endmodule
