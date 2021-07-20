@@ -18,10 +18,10 @@
 ---  Module Name: pressureAbnormalityDetector 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module pressureAbnormalityDetector(
- pressureData,
- presureAbnormality);
-input [5:0] pressureData;
-output presureAbnormality;
+module bloodTypeClassification(
+ bloodType,
+ bloodClass);
+input [2:0] bloodType;
+output bloodClass;
  // write your code here, please.
 endmodule
