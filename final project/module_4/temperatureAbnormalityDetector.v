@@ -19,12 +19,12 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 module temperatureAbnormalityDetector(
- factotyBaseTemp,
- factotyTempCoef,
+ factoryBaseTemp,
+ factoryTempCoef,
  tempSensorValue,
  temperatureAbnormality);
-input [4:0] factotyBaseTemp;
-input [3:0] factotyTempCoef;
+ input [4:0] factoryBaseTemp;
+ input [3:0] factoryTempCoef;
 input [3:0] tempSensorValue;
 output lowTempAbnormality;
 output highTempAbnormality;
