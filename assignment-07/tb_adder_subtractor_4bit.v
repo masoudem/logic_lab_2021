@@ -33,12 +33,11 @@ wire cout;
 wire cout_delay;
 
 	adder_subtractor_4bit test_adder_subtractor_4bit (.A(A), .B(B), .sel(sel), .S(sum), .cout(cout));
-	adder_subtractor_4bit test_adder_subtractor_4bit_delay (.A(A), .B(B), .sel(sel), .S(sum_delay), .cout(cout_delay));
+	adder_subtractor_4bit_delay test_adder_subtractor_4bit_delay (.A(A), .B(B), .sel(sel), .S(sum_delay), .cout(cout_delay));
 
 
 	initial 
 		begin
-		
 		// write your code here
 		
 	end
