@@ -23,6 +23,8 @@
 module system (
 	input        rst ,
 	input        clk ,
+	input  req,	             // Request	
+	input  confirm,
 	input  [3:0] din ,
 	output [3:0] dout_left ,
 	output [3:0] dout_right
