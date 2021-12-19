@@ -20,7 +20,7 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module dflop (
+module system (
 	input        rst ,
 	input        clk ,
 	input  [3:0] din ,
