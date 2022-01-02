@@ -25,8 +25,18 @@ module multiplexer4x1 (
 	input [1:0]	sel ,
 	output [3:0] y
 );
-	/* write your code here */
+	wire sel_not_0;
+	wire sel_not_1;
 	
-	/* write your code here */
+		not n1(sel_not_0, sel[0]);
+		not n2(sel_not_1, sel[1]);
+	
+	wire [3:0] x;
+		and an1(x[0], sel_not_1, sel_not_0, w[0]);
+		and an2(x[1], sel_not_1, sel[0], w[1]);
+		and an3(x[2], sel[1], sel_not_0, w[2]);
+		and an4(x[3], sel[1], sel[0], w[3]);
+	
+	or final(y, x[0], x[1], x[2], x[3]);
 
 endmodule

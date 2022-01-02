@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : masoud
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831079
+--  Student Name: MasihDalfardi
+--  Student Mail: masihdalfardiam@aut.ac.ir
 --  *******************************************************
 --  Additional Comments:
 --
@@ -26,8 +26,25 @@ module paritiy3_gen_sop (
 	input c,
 	output f	
 );
-	/* write your code here */
+        wire e1;
+	wire e2;
+	wire e3;
 	
-	/* write your code here */
+		not a1(e1, a);
+		not a2(e2, b);
+		not a3(e3, c);
+	
+	wire g1;
+	wire g2;
+	wire g3;
+	wire g4;
+	
+		and r1(g1, e1, e2, e3);
+		and r2(g2, e1, b, c);
+		and r3(g3, a, b, e3);
+		and r4(g4, a, e2, c);
+		
+		or p(f, g1, g2, g3, g4);
+
 
 endmodule

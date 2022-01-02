@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831079
+--  Student Name: MasihDalfardi
+--  Student Mail: masihdalfardiam@aut.ac.ir
 --  *******************************************************
 --  Additional Comments:
 --
@@ -26,8 +26,6 @@ module paritiy3_gen (
 	input c,
 	output f	
 );
-	/* write your code here */
-	
-	/* write your code here */
+paritiy3_gen_sop final(f, a, b, c);
 
 endmodule

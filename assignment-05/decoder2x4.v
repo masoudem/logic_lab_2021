@@ -25,8 +25,12 @@ module decoder2x4 (
 	input en ,
 	output [3:0] dout
 );
-	/* write your code here */
+	wire innot[1:0];
+	not n1(innot[0], in[0]);
+	not n2(innot[1], in[1]);
 	
-	/* write your code here */
-
+	and an1(dout[0], innot[1], innot[0], en);
+	and an2(dout[1], innot[1], in[0], en);
+	and an3(dout[2], in[1], innot[0], en);
+	and an4(dout[3], in[1], in[0], en);
 endmodule
