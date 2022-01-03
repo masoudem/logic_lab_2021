@@ -23,7 +23,7 @@ module parking_capacity_counter(
  parked,
  empty);
 input [7:0] new_capacity;
-input [3:0] parked;
+output [3:0] parked;
 output [3:0] empty;
  // write your code here, please.
 endmodule
