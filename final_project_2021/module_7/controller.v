@@ -15,20 +15,19 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: smart_parking
+---  Module Name: controller
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module smart_parking(
-input entry,
-input [7:0] parking_capacity,
-input exit,
-input [2:0] pattern,
-input [7:0] time_out,
-input [7:0] time_in,
-output [7:0] new_capacity,
-output [7:0] time_total;
-output [3:0] parked;
-output [3:0] empty;
+module controller(
+input [2:0] system_token,
+input request,
+input [7:0] TimeData,
+input reset,
+input clock,
+input confirm,
+input [2:0] user_token,
+output [7:0] data_Q,
+output [7:0] data_P
 );
 
  // write your code here, please.

@@ -15,20 +15,15 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: smart_parking
+---  Module Name: register
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module smart_parking(
-input entry,
-input [7:0] parking_capacity,
-input exit,
-input [2:0] pattern,
-input [7:0] time_out,
-input [7:0] time_in,
-output [7:0] new_capacity,
-output [7:0] time_total;
-output [3:0] parked;
-output [3:0] empty;
+module register(
+input [7:0] D,
+input CLK, 
+input RST,
+input en,
+output [7:0] Q;
 );
 
  // write your code here, please.
