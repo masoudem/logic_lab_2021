@@ -1,15 +1,15 @@
 module test_bench();
    //Inputs
-   reg [2:0]      system_token;
-   reg            request;
-   reg  [7:0]    TimeData;
-   reg           reset;
-   reg           clock;
-   reg           confirm ;
-   reg  [2:0]    user_token;
+reg [2:0]      system_token;
+reg            request;
+reg  [7:0]    TimeData;
+reg           reset;
+reg           clock;
+reg           confirm ;
+reg  [2:0]    user_token;
    //Outputs
-	wire   [7:0]  data_Q;
-	wire   [7:0]  data_P;
+wire   [7:0]  data_Q;
+wire   [7:0]  data_P;
 // Instantiate the Unit Under Test (UUT)
 	controller uut (
 		.system_token(system_token), 
@@ -45,10 +45,6 @@ initial begin
 		request = 1'b1;
 		confirm = 1'b1;
 		TimeData = 8'b11110010;
-		
-
-
-
 end
 
 initial
