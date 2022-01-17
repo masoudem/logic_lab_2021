@@ -54,7 +54,7 @@ always @(*)
 			end
 			
 		else cap = 8'b00000000;
-		assign parking_capacity_new = parking_capacity - cap;
+		parking_capacity_new = parking_capacity - cap;
 	end
 	
 
