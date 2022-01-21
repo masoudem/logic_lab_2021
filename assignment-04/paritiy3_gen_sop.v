@@ -26,8 +26,14 @@ module paritiy3_gen_sop (
 	input c,
 	output f	
 );
-	/* write your code here */
-	
-	/* write your code here */
+	wire a1, b1, c1, d, e, g, h;
+	not(a1, a);
+	not(b1, b);
+	not(c1, c);
+	and(d, a1, b1, c1);
+	and(e, a1, b, c);
+	and(g, a, b1, c);
+	and(h, a, b, c1);
+	or(f, d, e, g, h);
 
 endmodule
