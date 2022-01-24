@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9823010
+--  Student Name: Hosna Oyarhoseini
+--  Student Mail: hosna_oyar@aut.ac.ir
 --  *******************************************************
 --  Additional Comments:
 --
@@ -48,8 +48,64 @@ wire f_parity_gen_sop;
 		b <= 1'b0;
 		c <= 1'b0;
 		# 10;
-		// write your code here
+		a <= 1'b0;
+		b <= 1'b0;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b0;
+		b <= 1'b1;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b0;
+		b <= 1'b1;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b0;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b0;
+		c <= 1'b1;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b1;
+		c <= 1'b0;
+		# 10;
+		a <= 1'b1;
+		b <= 1'b1;
+		c <= 1'b1;
+		# 10;
+		
 		
 	end
 
+endmodule
+
+module paritiy3_gen_sop (
+	input a,
+	input b,
+	input c,
+	output f	
+);
+	wire d, e, g, h, i, j, k;
+	not g1(d, a);
+	not g2(e, b);
+	not g3(g, c);
+	and g4(h, d, e, g);
+	and g5(i, d, b, c);
+	and g6(j, a, b, g);
+	and g7(k, a, e, c);
+	or g8(f, h, i, j, k);
+
+endmodule
+
+
+module paritiy3_gen (
+	input a,
+	input b,
+	input c,
+	output f	
+);
+	xnor xgate(f, a, b, c);
 endmodule
