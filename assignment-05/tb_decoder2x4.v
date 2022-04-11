@@ -52,7 +52,8 @@ wire [3:0] dout;
 		in <= 2'b10;
 		# 10 ;
 		in <= 2'b11;
-		# 20 ;		
+		# 20 ;
+		$finish;
 	end
 
 endmodule
