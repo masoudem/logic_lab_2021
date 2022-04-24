@@ -38,7 +38,44 @@ wire cout_delay;
 
 	initial 
 		begin
-		// write your code here
+		A <= 4'b0101;
+		B <= 4'b0000;
+		sel <= 1'b0;
+		
+		#100;
+		
+		A <= 4'b0011;
+		B <= 4'b0011;
+		sel <= 1'b0;
+		
+		#100;
+		
+		A <= 4'b0101;
+		B <= 4'b0001;
+		sel <= 1'b0;
+		
+		#100;
+		
+		// subtracting test
+		
+		A <= 4'b0101;
+		B <= 4'b0001;
+		sel <= 1'b1;
+		
+		#100;
+		
+		A <= 4'b0101;
+		B <= 4'b0010;
+		sel <= 1'b1;
+		
+		#100;
+		
+		A <= 4'b0111;
+		B <= 4'b0110;
+		sel <= 1'b1;
+		
+		#100;
+		$finish;
 		
 	end
 
