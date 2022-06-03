@@ -21,7 +21,7 @@
 module parityErrorChecker(
  data,
  error);
-input [5:0] data;
+ input [7:0] data;
 output error;
  // write your code here, please.
 endmodule
