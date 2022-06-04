@@ -19,9 +19,9 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 module bfpfemale(
-w,
-h,
-a,
+wf,
+hf,
+af,
 bfprange);
   input [7:0] wf;
   input [7:0] hf;
