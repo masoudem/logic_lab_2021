@@ -23,9 +23,12 @@ w,
 h,
 a,
 bfprange);
-  input [7:0] w;
-  input [7:0] h;
-  input [7:0] a;
+  input [7:0] wf;
+  input [7:0] hf;
+  input [7:0] af;
+  input [7:0] wm;
+  input [7:0] hm;
+  input [7:0] am;
   output [7:0] range;
  // write your code here, please.
 endmodule
