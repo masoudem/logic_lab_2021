@@ -15,7 +15,7 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: parityErrorChecker 
+---  Module Name: comparator 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 module comparator(
