@@ -19,9 +19,13 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 module bfp(
-w,
-h,
-a,
+wf,
+hf,
+af,
+wm,
+hm,
+am,
+s,
 bfprange);
   input [7:0] wf;
   input [7:0] hf;
@@ -29,6 +33,7 @@ bfprange);
   input [7:0] wm;
   input [7:0] hm;
   input [7:0] am;
+  input s;
   output [7:0] range;
  // write your code here, please.
 endmodule
