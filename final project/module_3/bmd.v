@@ -22,7 +22,7 @@ module bfpfemale(
 bmdrange,
 normal,
 abnormal);
-  input [1:0] bmdrange;
+  input [2:0] bmdrange;
   output normal;
   output abnormal;
  // write your code here, please.
