@@ -21,6 +21,14 @@
 module smart_scales_system(
 weight,
 height,
+wf,
+hf,
+af,
+wm,
+hm,
+am,
+s,
+range,
 overweight,
 normal,
 underweight
