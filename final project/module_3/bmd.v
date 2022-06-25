@@ -18,7 +18,7 @@
 ---  Module Name: bmd 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module bfpfemale(
+module bmd(
 bmdrange,
 normal,
 abnormal);
