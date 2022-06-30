@@ -14,6 +14,7 @@
 --
 --*/
 
+
 /*-----------------------------------------------------------
 ---  Module Name: bmi_module
 -----------------------------------------------------------*/
@@ -25,9 +26,9 @@ module bmi_module(
  normal,
  underweight);
 input [7:0] height;
-input [7:0] weight;
+input [8:0] weight;
 output overweight;
 output normal;
 output underweight;
  // write your code here, please.
-endmodule
+endmodule 
